@@ -75,7 +75,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>D:\projects\c\cv\libtorch\include\torch\csrc\api\include;D:\projects\c\cv\libtorch\include;D:\projects\c\cv\opencv\opencv\build\include\opencv2;D:\projects\c\cv\opencv\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\projects\cv\libtorch\lib;D:\projects\cv\opencv\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>D:\projects\c\cv\libtorch\lib;D:\projects\c\cv\opencv\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>D:\projects\c\cv\libtorch-debug\lib;D:\projects\c\cv\opencv\opencv\build\x64\vc14\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>

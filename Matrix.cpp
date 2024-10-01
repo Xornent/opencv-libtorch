@@ -9,13 +9,12 @@ using namespace System::Collections::Generic;
 
 static NativeMatrix nativeMatrix;
 
-void MarshalString2(System::String^ s, std::string& outputstring)
+static void marshalString(System::String^ s, std::string& outputstring)
 {
 	const char* kPtoC = (const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();
 	outputstring = kPtoC;
 	Marshal::FreeHGlobal(IntPtr((void*)kPtoC));
 }
-
 
 cv::Mat translateImage(cv::Mat& matSrc, int xOffset, int yOffset, bool bScale)
 {
@@ -73,7 +72,7 @@ OpenCV::Matrix::Matrix(cv::Mat& matrix) {
 
 OpenCV::Matrix::Matrix(String^ path) {
 	std::string cstring;
-	MarshalString2(path, cstring);
+	marshalString(path, cstring);
 	std::cout << cstring << std::endl;
 	int id = nativeMatrix.allocate(cstring);
 	cv::Mat m = nativeMatrix.get(id);
@@ -144,7 +143,7 @@ OpenCV::Contour::Contour(std::vector<cv::Point> points) {
 
 void OpenCV::Matrix::Save(System::String^ path) {
 	std::string cstring;
-	MarshalString2(path, cstring);
+	marshalString(path, cstring);
 	cv::imwrite(cstring, nativeMatrix.get(this->Index));
 }
 
