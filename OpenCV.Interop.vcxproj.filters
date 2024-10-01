@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Headers\Torch">
+      <UniqueIdentifier>{bedf04d3-88c5-42e2-bd32-fca0ba396843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Torch\Native">
+      <UniqueIdentifier>{8221713e-9c0d-420e-8ca3-4f05b3dee510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Sources\OpenCV">
+      <UniqueIdentifier>{69bccb96-2b81-42d1-9fa4-f44403513b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Torch">
+      <UniqueIdentifier>{7451e3b6-034f-4658-94d9-74f661301d16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Torch\Native">
+      <UniqueIdentifier>{75eea895-b36c-4235-9eaa-5fcb582c98eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headers\OpenCV">
+      <UniqueIdentifier>{db38a8ce-11e8-492f-96e9-6ac82391f173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\OpenCV\Native">
+      <UniqueIdentifier>{7739104b-eb27-40ae-b245-60b5e9a9eeb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\OpenCV\Native">
+      <UniqueIdentifier>{e1de9479-b87c-480e-b3cd-96ccfbd3d6c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenCV.Interop.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCV.Native.h">
+      <Filter>Headers\Torch\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeTensor.h">
+      <Filter>Headers\Torch\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Tensor.h">
+      <Filter>Headers\Torch</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeJitModel.h">
+      <Filter>Headers\Torch\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="JitModel.h">
+      <Filter>Headers\Torch</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Headers\OpenCV</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeMatrix.h">
+      <Filter>Headers\OpenCV\Native</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenCV.Interop.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeTensor.cpp">
+      <Filter>Sources\Torch\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Sources\OpenCV</Filter>
+    </ClCompile>
+    <ClCompile Include="Tensor.cpp">
+      <Filter>Sources\Torch</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeJitModel.cpp">
+      <Filter>Sources\Torch\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="JitModel.cpp">
+      <Filter>Sources\Torch</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeStorages.cpp">
+      <Filter>Sources\Torch\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeMatrix.cpp">
+      <Filter>Sources\OpenCV\Native</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
